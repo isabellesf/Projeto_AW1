@@ -16,9 +16,60 @@
     </header>
 
     <nav>
-        <a href="telainicial.html"> Tela inicial  </a> |
-        <a href="form.html"> Formulário </a> |
-        <a href="parcerias.html"> Parcerias </a>
+      <style type="text/css">
+        body {
+            color: #000;
+            font: 12px Verdana, sans-serif;
+            }
+        
+        #conteudo {
+            width: 70%;
+            float: right;
+            text-align: center;
+            }
+        
+        #menu {
+            width: 30%;
+            margin: 0; padding: 0;
+            float: left;
+        
+            }
+        
+        #menu ul li {
+            margin: 0; padding: 0px;
+            border-bottom: 1px solid #CCC;
+            text-align: left;
+            list-style-type: none;
+            }
+        
+        
+        #menu a:link {
+            background: #F5F5F5;
+            color: #666;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 8px;
+            display: block;
+            }
+        
+        #menu a:hover {
+            background: #E5F0FF;
+            color: #039;
+            }
+        
+        </style>
+        <title> Formulário</title>
+        </head>
+        <body>
+        </div>
+        <div id="menu">
+        <ul>
+        <li><a href="telainicial.html">O que buscamos</a></li>
+        <li><a href="form.html">Formulário</a></li>
+        <li><a href="parcerias.html">Parecerias</a></li>
+        <li><a href="quemsomos.html">Quem somos</a></li>
+        </ul>
+        </div>
     </nav>
     <section>
         <article>
@@ -27,15 +78,15 @@
     <form id=”form” name=”form” method=”post” action =“”>
     
 
-       <label for = "nome_id"> Nome Completo: </label>
+       <label for = "nome_id"> Nome Completo: </label> <br>
        <input type= "text" name= "nome " id ="nome_id"
        placeholder = "digite o nome aqui"required>
 
-       <label for = "nomeart_id"> Nome Artístico (se houver): </label>
+       <label for = "nomeart_id"> Nome Artístico (se houver): </label> <br>
        <input type= "text" name= "nome " id ="nome_id"
        placeholder = "digite seu nome artístico aqui"required>
 
-       <label for = "date_id"> Data de Nascimento: </label>
+       <label for = "date_id"> Data de Nascimento: </label> <br>
        <input type= "date" name= "data " id ="data_id"
        placeholder = "digite sua data de nascimento" required>
 
@@ -43,7 +94,7 @@
     
   
 
-     <label for="cidade"> Cidade :</label>
+     <label for="cidade"> Cidade :</label> <br>
      <input list="cidades" name="cidade" id="cid_id">
      <datalist id="cidades">
        <option value="São Paulo">
@@ -53,26 +104,26 @@
        <option value="Campinas">
      </datalist>
 
-    <label for = "uf_id"> UF: </label>
+    <label for = "uf_id"> UF: </label> <br>
     <select name= "uf " id ="uf_id" >
      <option value="SP" label= "SP">
      </select>
 
 
-    <label for = "cel_id"> Celular: </label>
+    <label for = "cel_id"> Celular: </label> <br>
      <input type= "tel" name= "cel " id ="cel_id"
      placeholder = "Digite seu celular" maxlength="11">
      
     
-     <label for = "tel_id">Telefone: </label>
+     <label for = "tel_id">Telefone: </label> <br>
      <input type= "tel" name= "tel " id ="tel_id"
      placeholder = "Digite seu telefone" maxlength="8">
 
-     <label for = "email_id">Email: </label>
+     <label for = "email_id">Email: </label> <br>
      <input type= "email" name= "email " id ="email_id"
      placeholder = "Digite seu email" required >
 
-     <label for="estilo"> Qual estilo/ritmo das suas músicas?:</label>
+     <label for="estilo"> Qual estilo/ritmo das suas músicas?:</label> <br>
      <input list="estilos" name="estilo" id="estilo_id">
      <datalist id="estilos">
        <option value="Variado">
@@ -85,20 +136,18 @@
      </datalist> 
 
      <label for="tipo">  Explique rapidamente no campo obrigatório abaixo sobre seu trabalho musical.
-Exemplo: se é compositor, cantor, estilo, letrista, banda, amador, profissional, algum detalhe.</label>
+Exemplo: se é compositor, cantor, estilo, letrista, banda, amador, profissional, algum detalhe.</label> <br>
      <textarea id="tipo" name="tipo"
      rows="5" cols="33">
      Digite sua explicação aqui
     </textarea>
-
-
-     
      <input type = "submit" value = "Enviar">
      <input type = "reset" value = "Limpar">
     </form>
     
        </article>
 </section>
+
 </body>
 
 </html>
