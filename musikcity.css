@@ -98,6 +98,7 @@ a.activate, a:hover{
         left:0;
     }
 }
+
 .texto{
 
         box-shadow: 1px 1px 5px #363636;
@@ -109,11 +110,9 @@ a.activate, a:hover{
         border-radius: 20px;
         margin-top: 40px;
         color: white;
-        margin-right: 700px;
+        margin-right: 5px;
         text-align: justify;
-        
-
 }
-.foto{
-    text-align: right;
+.conteudo{
+    display: flex;
 }

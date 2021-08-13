@@ -7,11 +7,17 @@
 }
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #363636;
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
 }
+
 nav{
     background: black;
     height: 80px;
     width: 100%;
+    margin-bottom: 50px;
 }
 label.logo{
     color:white;
@@ -96,16 +102,8 @@ a.activate, a:hover{
         left:0;
     }
 }
-section{
-    background: linear-gradient(to bottom, #47298c 0%, #00d0ff 100%);
-    background-size: cover;
-}
 
-.form {
-    width: 50%;
-    margin: auto;
-    padding-top: 5px;
-}
+
 
 .card {
     box-shadow: 1px 1px 5px #363636;
@@ -115,7 +113,9 @@ section{
     padding-top: 10px;
     padding-bottom: 20px;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 100px;
+    width: 50%;
+    margin: auto;
 }
 
 
@@ -149,4 +149,65 @@ section{
     color: white;
     border-radius: 40%;
 }
+.opcoes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    padding-top: 5%;
+    font-weight: bold;
+
+}
+
+.row{
+    background-color:#000000;
+    color: aliceblue;
+    text-align: center;
+    border-color: #000000;
+    border-radius: 25px;
+}
+.importante{
+    width: 50%;
+    margin: auto;
+    padding-top: 5px;
+    text-align: center;
+    font-weight:bold;
+    
+}
+.card-group1 > button {
+    border-radius: 10px;
+    padding: 12px;
+    background-color:#000000;
+    width: 175px;
+    font-size: 20px;
+    color: aliceblue;
+    position:absolute;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    left:85%;
+    
+}
+.card-group2 > button {
+    border-radius: 10px;
+    padding: 12px;
+    background-color:#000000;
+    width: 175px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+    position:absolute;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    left:70%;
+    
+}
+
+ 
+
+
+
+
+ 
+
+
 
