@@ -1,8 +1,8 @@
-<!doctype html>
+<!doctype html> <!--documento html -->
 
-<html lang="pt-br">
+<html lang="pt-br"> <!-- define o idioma -->
 
-<head>
+<head> <!-- cabeçalho e definição das tags meta, que auxiliam os mecanismos de busca  -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <meta name="author" content="Clara Fonte, Giovnna Medeiros e Isabelle Furman">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="form.css">
 </head>
 
-<body>
+<body> <!-- inicio do conteúdo do documento -->
 
     <nav>
         <input type ="checkbox" id="check">
@@ -20,6 +20,8 @@
         </label>
         <label class="logo">Musikcity</label>            
           
+
+        <!-- Lista que define o menu -->
             <ul>
             <li><a class= "activate" href="telainicial.html">O que buscamos</a></li>
             <li><a href="form.html">Formulário</a></li>
@@ -30,40 +32,40 @@
 
     <section>
 
-        <article>
+        <article> <!-- Desenvolvimento das entradas do formulário -->
             <form class="form" id="form" action="" method="POST">
                 <div class="card">
                     <div class="card-top">
                         <h2 class="title">Formulário de Encaminhamento</h2>
                     </div>
         
-                    <div class="card-group">
+                    <div class="card-group"> <!-- Nome, tipo nome -->
                         <label>Nome</label>
                         <input type="text" name="nome" placeholder="Insira seu nome completo" required>
                     </div>
         
-                    <div class="card-group">
+                    <div class="card-group"> <!-- email, tipo email -->
                         <label>E-mail</label>
                         <input type="email" name="email" placeholder="Insira seu e-mail" required>
                     </div>
         
-                    <div class="card-group">
+                    <div class="card-group"> <!-- Nome, tipo nome -->
                         <label>Nome Artístico (se houver)</label>
                         <input type="text" name="nome_usuario" placeholder="Insira seu nome artístico" required>
                     </div>
         
-                    <div class="card-group">
+                    <div class="card-group"> <!-- telefone, tipo tel, com uso de máscara -->
                         <label>Telefone</label>
                         <input type="tel" name="telefone" placeholder="Insira seu telefone" required data-mask="(00) 0000-0000" id="telefone">
                     </div>
 
                     <div class="card-group">
-                        <label>Data de Nascimento</label>
+                        <label>Data de Nascimento</label> <!-- data de nascimento, tipo data -->
                         <input type="date" name="data" placeholder="Insira seu telefone"  id="data">
                     </div>
          
                     <div class="card-group">
-                    <label for="estilo"> Qual estilo/ritmo das suas músicas?:</label> <br>
+                    <label for="estilo"> Qual estilo/ritmo das suas músicas?:</label> <br> <!-- estilo musical, lista dropdown -->
                     <input list="estilos" name="estilo" id="estilo_id">
                     <datalist id="estilos">
                    <option value="Variado">
@@ -76,7 +78,7 @@
                   </datalist> 
                 </div>
                 
-                <div class = "textarea">
+                <div class = "textarea"> <!-- Explicação sobre o artista, tipo área de texto -->
                 <label>  Explique rapidamente no campo obrigatório abaixo sobre seu trabalho musical.
                     Exemplo: se é compositor, cantor, estilo, letrista, banda, amador, profissional, algum detalhe.</label> <br>
                          <textarea id="tipo" name="tipo"
@@ -86,8 +88,8 @@
                 </div>
                 </div>
      
-    <div class = "importante">
-    <h2>IMPORTANTE</h2>
+    <div class = "importante"> <!-- área de texto com parágrafo e título para ser comentado sobre partes importantes caso o artista decida concluir o formulário-->
+    <h2>IMPORTANTE</h2> 
     <p>O artista ou autor é maior de idade e concorda em pagar 20% do que vier a receber das gravadoras, Ecad, royalties, DVDs, direitos autorais, ganhos em downloads, novelas, internet, radios, tvs, e adiantamentos?
     Você só pagará a divulgação se o maestro selecionar o seu material. São 3 escolhidos por bimestre.
     Não há intermediários: MusikCity não é empresa. É o site do maestro.
@@ -95,10 +97,12 @@
             </div>
 
   
-     <div class="opcoes">
+     <div class="opcoes"> 
      <div class="row">
 
-        <input type="radio" name = "escolha" value="1" id="opcao1">
+        <!-- Definições das opções de escolha do artisca, utilizando checkbox-->
+
+        <input type="radio" name = "escolha" value="1" id="opcao1" >  
         <h3>OPÇÃO 1 - básica</h3>
 
             <p>R$ 1.190,00 à vista <br></p>
@@ -145,10 +149,11 @@
     </div>
 </div>
 
+    <!-- Botão para enviar formulário, tipo submit-->
      <div class = "card-group1">
      <button type="submit">ENVIAR</button>
      </div>
-
+     <!-- Botão para limpar formulário, tipo reset -->
      <div class = "card-group2">
         <button type="reset">LIMPAR</button>
         </div>
