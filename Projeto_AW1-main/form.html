@@ -1,0 +1,171 @@
+<!doctype html> <!--documento html -->
+
+<html lang="pt-br"> <!-- define o idioma -->
+
+<head> <!-- cabeçalho e definição das tags meta, que auxiliam os mecanismos de busca  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="author" content="Clara Fonte, Giovnna Medeiros e Isabelle Furman">
+    <title> Formulário</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body> <!-- inicio do conteúdo do documento -->
+
+    <nav>
+        <label class="logo">Musikcity</label>            
+          
+        <!-- Lista que define o menu -->
+            <ul>
+            <li><a href="oquebuscamos.html">O que buscamos</a></li>
+            <li><a class= "activate" href="form.html">Formulário</a></li>
+            <li><a href="parcerias.html">Parcerias</a></li>
+            <li><a href="quemsomos.html">Quem somos</a></li>
+            </ul>
+    </nav>
+
+    <section>
+
+        <article> <!-- Desenvolvimento das entradas do formulário -->
+            <form class="form" id="form" action="" method="POST">
+                <div class="card">
+                    <div class="card-top">
+                        <h2 class="title">Formulário de Encaminhamento</h2>
+                    </div>
+        
+                    <div class="card-group"> <!-- Nome, tipo nome -->
+                        <label>Nome</label>
+                        <input type="text" name="nome" placeholder="Insira seu nome completo" required>
+                    </div>
+        
+                    <div class="card-group"> <!-- email, tipo email -->
+                        <label>E-mail</label>
+                        <input type="email" name="email" placeholder="Insira seu e-mail" required>
+                    </div>
+        
+                    <div class="card-group"> <!-- Nome, tipo nome -->
+                        <label>Nome Artístico (se houver)</label>
+                        <input type="text" name="nome_usuario" placeholder="Insira seu nome artístico" required>
+                    </div>
+        
+                    <div class="card-group"> <!-- telefone, tipo tel, com uso de máscara -->
+                        <label>Telefone</label>
+                        <input type="tel" name="telefone" placeholder="Insira seu telefone" required data-mask="(00) 0000-0000" id="telefone">
+                    </div>
+
+                    <div class="card-group">
+                        <label>Data de Nascimento</label> <!-- data de nascimento, tipo data -->
+                        <input type="date" name="data" placeholder="Insira seu telefone"  id="data" required>
+                    </div>
+         
+                    <div class="card-group">
+                    <label for="estilo"> Qual estilo/ritmo das suas músicas?:</label> <br> <!-- estilo musical, lista dropdown -->
+                    <input list="estilos" name="estilo" id="estilo_id">
+                    <datalist id="estilos">
+                   <option value="Variado">
+                   <option value="Rock">
+                  <option value=" MPB">
+                  <option value="Sertanejo">
+                 <option value="Gospel">
+                 <option value="Outro">    
+        
+                  </datalist> 
+                </div>
+                
+                <div class = "textarea"> <!-- Explicação sobre o artista, tipo área de texto -->
+                <label>  Explique rapidamente no campo obrigatório abaixo sobre seu trabalho musical.
+                    Exemplo: se é compositor, cantor, estilo, letrista, banda, amador, profissional, algum detalhe.</label> <br>
+                         <textarea id="tipo" name="tipo"
+                         rows="5" cols="80">Digite sua explicação aqui
+                         </textarea>
+                
+                </div>
+                </div>
+     
+    <div class = "importante"> <!-- área de texto com parágrafo e título para ser comentado sobre partes importantes caso o artista decida concluir o formulário-->
+        <br><h2>IMPORTANTE</h2><br>
+    <p style="text-align: justify;">O artista ou autor é maior de idade e concorda em pagar 20% do que vier a receber das gravadoras, Ecad, royalties, DVDs, direitos autorais, ganhos em downloads, novelas, internet, radios, tvs, e adiantamentos?
+    Você só pagará a divulgação se o maestro selecionar o seu material. São 3 escolhidos por bimestre.
+    Não há intermediários: MusikCity não é empresa. É o site do maestro.
+    Caso esteja de acordo com tudo, marque uma das 3 opções abaixo.</p>
+            </div>
+
+  
+     <div class="opcoes"> 
+     <div class="row">
+
+        <!-- Definições das opções de escolha do artisca, utilizando checkbox-->
+
+        <input type="radio" name = "escolha" value="1" id="opcao1" required>  
+        <h3>OPÇÃO 1 - básica</h3><br>
+
+            <p>R$ 1.190,00 à vista <br></p><br>
+    
+        <p>Recomendação de contratação indicada pelo maestro utilizando  40 EPS ou 40 CDS com os arquivos de música.</p>
+        <p>Vai para os 40 principais produtores que escolhem músicas para os cantores e bandas, diretores de gravadoras como Warner, Sony Music, Onda, Universal Music, Som Livre, Deckdisc, e outras, selos, editoras (pagam adiantamento), produção de programas de TV, e 1 produtor musical das novelas. </p>
+        <p>DURAÇÃO DO ENCAMINHAMENTO: 45 dias.</p>
+        <p>PRAZO QUE FICA NO SITE: 1 ano no mínimo, com elogios do maestro (se escolhido), foto, história de sua vida e música tocando. </p>
+        <p><i>OBS: Caso não tenha os 40 Cds ou Eps com suas músicas, o maestro pode mandar fazer no Rio a R$4,00 cada. </i></p>
+        <p><br>
+    </div>
+
+    
+    <div class="row">
+
+        <input type="radio" name = "escolha" value="2" id="opcao2" required>
+        </p><h3>OPÇÃO 2 - reforçada </h3><br>
+        <p>R$ 1.190,00 à vista <br></p><br>
+
+        <p>Encaminhamento pelo maestro de 60 EPS ou 60 CDS ou arquivos de música.</p>
+        <p >Vai para 60 dos principais produtores que escolhem músicas para os cantores e bandas, mais diretores de gravadoras como Warner, Sony Music, Onda, Universal Music, Som Livre, Deckdisc, e outras, mais selos, mais editoras (pagam adiantamento), produção de programas de TV, e 3 produtores das novelas da Globo.</font>.</p>
+        <p>DURAÇÃO DO ENCAMINHAMENTO: 50 dias.</p>
+        <p>PRAZO QUE FICA NO SITE: 1 ano e 3 meses no mínimo, com elogios do maestro (se escolhido), foto, história de sua vida e música tocando. </p>
+        <p><i>OBS: Caso não tenha os 60 Cds ou Eps com suas músicas, o maestro pode mandar fazer no Rio a R$4,00 cada. </i></p>
+        <p><br>
+    </div>
+
+    <div class="row">
+
+        <input type="radio" name="escolha" value="3" id="opcao3" >
+
+    </p><h3>OPÇÃO 3 - super reforçada </h3><br>
+        <p>R$ 1.780,00 à vista <br></p><br>
+        
+
+        <p>Todos os pagamento são depositados direto ao maestro sem intermediários (se escolhido).</p>
+        <p>Vai para 60 dos principais produtores que escolhem músicas para os cantores e bandas, mais diretores de gravadoras como Warner, Sony Music, Onda, Universal Music, Som Livre, Deckdisc, e outras, mais selos, mais editoras (pagam adiantamento), produção de programas de TV, e 3 produtores das novelas da Globo.</font>.</p>
+        <p>Encaminhamento pelo maestro de 80 EPS ou 80 CDS ou arquivos de música.</p>
+        <p>Vai para MULTISHOW e outros programas musicais de TV aberta e fechada, para 80 produtores que escolhem músicas para os cantores e bandas, número maior de diretores de gravadoras como Warner, Sony Music, Onda, Universal Music, Som Livre, Deckdisc, e outras, selos, editoras (pagam adiantamento), diversos produtores das novelas da Globo e Record, produção de programas de TV, e mais pessoas do meio musical nacional e internacional.</p>
+        <p>DURAÇÃO DO ENCAMINHAMENTO: 70 dias.</p>
+        <p>PRAZO QUE FICA NO SITE: 1 ano e meio no mínimo, com elogios do maestro(se escolhido), foto, história de sua vida e música tocando. </p>
+        <p><i>OBS: Caso não tenha os 60 Cds ou Eps com suas músicas, o maestro pode mandar fazer no Rio a R$4,00 cada. </i></p>
+        <p><br>
+    </div>
+</div>
+
+    <!-- Botão para enviar formulário, tipo submit-->
+     <div class = "card-group1">
+     <button type="submit">ENVIAR</button>
+     </div>
+     <!-- Botão para limpar formulário, tipo reset -->
+     <div class = "card-group2">
+        <button type="reset">LIMPAR</button>
+        </div>
+   
+
+            </form>
+       </article>
+</section>
+<!--Footer da página -->
+<footer>
+    <p>MusikCity® 1997 - 2021</p>
+    <p>Atualizado em 14 de agosto de 2021</p>
+</footer>
+
+<!--Finalização do documento com footer e fechando as tags de body e html -->
+
+</body>
+</body>
+
+</html>
