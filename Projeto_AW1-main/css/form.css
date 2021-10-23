@@ -91,6 +91,29 @@ a.activate, a:hover{ /* Botão responsivo a click*/
     }
 }
 
+    @-webkit-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; } 
+        }
+        @-moz-keyframes fadeIn {
+        0% { opacity: 0;}
+        100% { opacity: 1; }
+        }
+        @-o-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+        @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+
+        .fadeIn {
+            -webkit-animation: fadeIn 3s ease-in-out;
+            -moz-animation: fadein 3s ease-in-out;
+            -o-animation: fadeIn 3s ease-in-out;
+            animation: fadeIn 3s ease-in-out;
+            }
 /*Definições das caracteristicas do form*/
 
 .card {  
@@ -161,7 +184,7 @@ a.activate, a:hover{ /* Botão responsivo a click*/
     font-weight:bold;
     
 }
-.card-group1 > button { /*Definições de botão enviar*/
+.card-group1 > button { /*Definições de botão próximo*/
     border-radius: 10px;
     padding: 12px;
     background-color:#000000;
@@ -188,6 +211,10 @@ a.activate, a:hover{ /* Botão responsivo a click*/
     margin-bottom: 10%;
     left:70%;
     
+}
+a{ /*cor do link dentro do botão*/
+    text-decoration: none;
+    color:white;
 }
 footer{ /*Definições do footer*/
     background-color: #000000;

@@ -1,0 +1,106 @@
+<!doctype html> <!--documento html -->
+
+<html lang="pt-br"> <!-- define o idioma -->
+
+<head> <!-- cabeçalho e definição das tags meta, que auxiliam os mecanismos de busca  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="author" content="Clara Fonte, Giovnna Medeiros e Isabelle Furman">
+    <title> pagamento</title>
+    <script src = "js/pag.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/pagamento.css">
+</head>
+
+<body> <!-- inicio do conteúdo do documento -->
+
+    <nav>
+        <label class="logo">Musikcity</label>            
+          
+        <!-- Lista que define o menu -->
+            <ul>
+            <li><a href="oquebuscamos.html">O que buscamos</a></li>
+            <li><a class= "activate" href="form.html">Formulário</a></li>
+            <li><a href="parcerias.html">Parcerias</a></li>
+            <li><a href="quemsomos.html">Quem somos</a></li>
+            <li><a href="reg_afi.html">Registro de Música e Afinação</a></li>
+            </ul>
+    </nav>
+
+ <section>
+   <article>
+    <div class="checkout-panel"> <!-- div para formatação do conteúdo-->
+    <div class="panel-body">
+     
+   
+      <div class="payment-method"> <!--div para formatação das imagens das formas de pagemento-->
+        <label for="card" class="method card">
+          <div class="card-logos">
+            <img src="https://designmodo.com/demo/checkout-panel/img/visa_logo.png"/>
+            <img src="https://designmodo.com/demo/checkout-panel/img/mastercard_logo.png"/>
+          </div>
+   
+          <div class="radio-input"> <!--input da forma de pagamento-->
+            <input id="card" type="radio" name="payment">
+            Pagar com Cartão de Crédito
+          </div>
+        </label>
+   
+        <label for="paypal" class="method paypal">
+          <img src="https://designmodo.com/demo/checkout-panel/img/paypal_logo.png"/>
+          <div class="radio-input">
+            <input id="paypal" type="radio" name="payment">
+            Pagar com Paypal 
+          </div>
+        </label>
+      </div>
+   
+      <div class="input-fields">  <!--inputs dos dados do cartão de crédito-->
+        <div class="column-1">
+          <label for="cardholder">Nome</label>
+          <input type="text" id="nomecc" required />
+   
+          <div class="small-inputs">
+            <div>
+              <label for="date">Validade</label>
+              <input type="month" id="data" required/>
+            </div>
+   
+            <div>
+              <label for="verification">CVV*</label>
+              <input  type="password" id="cvv" maxlength="3" required/>
+            </div>
+          </div>
+   
+        </div>
+        <div class="column-2">
+          <label name= "cardnumber" for="cardnumber">Número do cartão</label>
+          <input type="text" id="cardnumber" maxlength="16" required/>
+   
+          <label for="parc">Quantidade de Parcelas</label>
+          <input type="number" id="parc" required/>
+   
+          <span class="info">* CVV é um código de segurança de 3 dígitos, impresso no verso de cartões de crédito.</span>
+        </div>
+      </div>
+    </div>
+   
+    <div class="panel-footer"> <!--botões voltar e finalizar-->
+      <button class="card-group1">Voltar</button>
+      <button type= "submit" class="card-group2" onclick="validar()">Finalizar</button>
+    </div>
+  </div>
+
+   </article>
+ </section>
+
+<!--Finalização do documento com footer e fechando as tags de body e html -->
+ <footer>
+  <p>MusikCity® 1997 - 2021</p>
+  <p>Atualizado em 14 de agosto de 2021</p>
+</footer>
+
+</body>
+</html>
+  
+  

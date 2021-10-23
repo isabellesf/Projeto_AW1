@@ -1,4 +1,6 @@
-*{ /*Seletor universal */
+
+ 
+*{  /*Seletor universal */
     padding: 0%;
     margin: 0%;
     text-decoration: none;
@@ -8,12 +10,15 @@
 body{ /*definições da estrutura do conteúdo da página */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: linear-gradient(to bottom, #11112c 0%, #0086b3 100%);
+    background-size: cover;
+   
 }
 
 nav{ /*configurações de formato do menu */
     background: black;
     height: 80px;
     width: 100%;
+    margin-bottom: 50px;
 }
 label.logo{ /* Logo do site*/
     color:white;
@@ -55,11 +60,11 @@ a.activate, a:hover{ /* Botão responsivo a click*/
         font-size: 16px;
     }
 }
-@media (max-width : 858px){ /* Responsividade do site*/
+@media (max-width : 858px){  /* Responsividade do site*/
     .checkbtn{
         display:block;
     }
-    ul{ /* Definições da lista*/
+    ul{  /* Definições da lista*/
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -85,8 +90,33 @@ a.activate, a:hover{ /* Botão responsivo a click*/
         left:0;
     }
 }
-.texto{ /* Formartação do texto*/
 
+    @-webkit-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; } 
+        }
+        @-moz-keyframes fadeIn {
+        0% { opacity: 0;}
+        100% { opacity: 1; }
+        }
+        @-o-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+        @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+
+        .fadeIn {
+            -webkit-animation: fadeIn 3s ease-in-out;
+            -moz-animation: fadein 3s ease-in-out;
+            -o-animation: fadeIn 3s ease-in-out;
+            animation: fadeIn 3s ease-in-out;
+            }
+/*Definições das caracteristicas do form*/
+
+.card {  
     box-shadow: 1px 1px 5px #363636;
     background-color: #000000;
     padding-left: 40px;
@@ -94,83 +124,39 @@ a.activate, a:hover{ /* Botão responsivo a click*/
     padding-top: 10px;
     padding-bottom: 20px;
     border-radius: 20px;
-    margin-top: 40px;
-    color: white;
-    margin-right: 5px;
-    text-align: justify;
-
+    margin-top: 100px;
+    width: 50%;
+    margin: auto;
+    color:white;
 }
-@-webkit-keyframes fadeIn { /*definições do efeito fadeIn*/
-    0% { opacity: 0; }
-    100% { opacity: 1; } 
-    }
-    @-moz-keyframes fadeIn {
-    0% { opacity: 0;}
-    100% { opacity: 1; }
-    }
-    @-o-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-    }
-    @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-    }
 
-    .fadeIn {
-        -webkit-animation: fadeIn 3s ease-in-out;
-        -moz-animation: fadein 3s ease-in-out;
-        -o-animation: fadeIn 3s ease-in-out;
-        animation: fadeIn 3s ease-in-out;
-        }
-.parent { /*Definição Grid layout*/
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(4, 200px);
-    grid-column-gap: 70px;
-    grid-row-gap: 40px;
-    margin-left: 25%;
-    font-size: 1,5em;
-    font-weight: bold;
-    margin-top: 2%;
+.card-top {
+    text-align: center;
+}
+a.tc{
+    display: flex;
+    color:white;
+    margin-left:44%;
+    margin-top: 1%;
+    text-decoration: underline;
+}    
+a.priv{ /*link do footer*/
+   
+    display: flex;
+    color:white;
+    margin-left:46.5%;
+    margin-top: 1%;
+    text-decoration:underline;
+}
     
-    }
-  
-    p{ /*Definições legendas*/
-        color: white;
-        text-align: center;
-    }
-
-    h1{ /*Definições título*/
-        color: white;
-        text-align: center;
-        font-size: 175%;
-    }
-
-    /*Definições de área de grid*/
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 3; margin-top: 16%;}
-    .div3 { grid-area: 1 / 3 / 2 / 4; margin-top: 16%;}
-    .div4 { grid-area: 2 / 1 / 3 / 2; }
-    .div5 { grid-area: 2 / 2 / 3 / 3; margin-top: 16%;}
-    .div6 { grid-area: 2 / 3 / 3 / 4; margin-top: 16%;}
-    .div7 { grid-area: 3 / 1 / 4 / 2; }
-    .div8 { grid-area: 3 / 2 / 4 / 3; margin-top: 16%;}
-    .div9 { grid-area: 3 / 3 / 4 / 4; margin-top: 16%;}
-    .div10 { grid-area: 4 / 1 / 5 / 2; }
-    .div11 { grid-area: 4 / 2 / 5 / 3; margin-top: 16%;}
-    .div12 { grid-area: 4 / 3 / 5 / 4; margin-top: 16%;}
-
-  footer{ /*Definições de footer*/
+    
+footer{ /*Definições do footer*/
     background-color: #000000;
     text-align: center;
     font-size: 110%;
     color: aliceblue;
     padding-top: 3%;
     padding-bottom: 1%;
-    margin-top: 15%;
+    margin-top: 10%;    
     
 }
-  
-
-

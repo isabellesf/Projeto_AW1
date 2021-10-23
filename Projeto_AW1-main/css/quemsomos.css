@@ -102,7 +102,29 @@ a.activate, a:hover{ /* Botão responsivo a click*/
     width: 50%;
     margin-left: 25%;
 }
+@-webkit-keyframes fadeIn { /*definições do efeito fadeIn*/
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
 
+    .fadeIn {
+        -webkit-animation: fadeIn 3s ease-in-out;
+        -moz-animation: fadein 3s ease-in-out;
+        -o-animation: fadeIn 3s ease-in-out;
+        animation: fadeIn 3s ease-in-out;
+        }
 .parent { /*Definições de grid layout*/
     display: grid;
     grid-template-columns: repeat(3, 200px);
