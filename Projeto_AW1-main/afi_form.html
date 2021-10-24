@@ -1,0 +1,130 @@
+<!doctype html> <!--documento html -->
+
+<html lang="pt-br"> <!-- define o idioma -->
+
+<head> <!-- cabeçalho e definição das tags meta, que auxiliam os mecanismos de busca  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="author" content="Clara Fonte, Giovnna Medeiros e Isabelle Furman">
+    <title> Formulário</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body> <!-- inicio do conteúdo do documento -->
+
+    <nav>
+        <label class="logo">Musikcity</label>            
+          
+        <!-- Lista que define o menu -->
+            <ul>
+            <li><a href="oquebuscamos.html">O que buscamos</a></li>
+            <li><a href="form.html">Formulário</a></li>
+            <li><a href="parcerias.html">Parcerias</a></li>
+            <li><a href="quemsomos.html">Quem somos</a></li>
+            <li><a href="reg_afi.html">Registro de Música e Afinação</a></li>
+            </ul>
+    </nav>
+
+    <section class = "fadeIn">
+
+        <article> <!-- Desenvolvimento das entradas do formulário -->
+            <form class="form" id="form" action="" method="POST">
+                <div class="card">
+                    <div class="card-top">
+                        <h2 class="title">Formulário de Encaminhamento</h2>
+                    </div>
+        
+                    <div class="card-group"> <!-- Nome, tipo nome -->
+                        <label>Nome</label>
+                        <input type="text" name="nome" placeholder="Insira seu nome completo" id="nome" required>
+                    </div>
+        
+                    <div class="card-group"> <!-- email, tipo email -->
+                        <label>E-mail</label>
+                        <input type="email" name="email" placeholder="Insira seu e-mail" id="email" required>
+                    </div>
+        
+                    <div class="card-group"> <!-- Nome, tipo nome -->
+                        <label>Nome Artístico (se houver)</label>
+                        <input type="text" name="nome_usuario" placeholder="Insira seu nome artístico" id="nome_usuario" required>
+                    </div>
+        
+                    <div class="card-group"> <!-- telefone, tipo tel, com uso de máscara -->
+                        <label>Telefone</label>
+                        <input type="number" name="telefone" placeholder="Insira seu telefone" required id="telefone">
+                    </div>
+
+                    <div class="card-group">
+                        <label>Idade</label> <!-- data de nascimento, tipo data -->
+                        <input type="number" name="idade" placeholder="Insira sua idade"  id="idade" min="18" required>
+                        <!-- FAZER ELE TER A CONFIRMAÇÃO DE IDADE, SE FOR MENOR DE IDADE CANCELAR A OPERAÇÃO -->
+                    </div>
+         
+                    <div class="card-group">
+                    <label for="tipo_afi"> Tipo da afinação</label> <br> <!-- estilo musical, lista dropdown -->
+                    <input list="tipo_afi" name="tipo_afi" id="tipo_afi" placeholder="Escolha o tipo de afinação">
+                    <datalist id="tipo_afi">
+                   <option value="Radical">
+                   <option value="Natural">
+                  <option value="O produtor decide">
+                  </datalist> 
+                </div>
+
+                <div class="card-group">
+                    <label for="estilo"> Qual estilo/ritmo das suas músicas?:</label> <br> <!-- estilo musical, lista dropdown -->
+                    <input list="estilos" name="estilo" id="estilo" placeholder="Escolha o tipo de música">
+                    <datalist id="estilos">
+                   <option value="Variado">
+                   <option value="Rock">
+                  <option value=" MPB">
+                  <option value="Sertanejo">
+                 <option value="Gospel">
+                 <option value="Outro">    
+        
+                  </datalist> 
+                </div>
+                
+                <div class = "textarea"> <!-- Explicação sobre o artista, tipo área de texto -->
+                <label>  Explique rapidamente no campo obrigatório abaixo sobre seu trabalho musical.
+                    Exemplo: se é compositor, cantor, estilo, letrista, banda, amador, profissional, algum detalhe.</label> <br>
+                         <textarea id="tipo" name="tipo"
+                         rows="5" cols="80">Digite sua explicação aqui
+                         </textarea>
+                
+                </div>
+                </div>
+     
+    <div class = "importante"> <!-- área de texto com parágrafo e título para ser comentado sobre partes importantes caso o artista decida concluir o formulário-->
+        <br><h2>PREÇOS</h2><br>
+    <p style="text-align: center;">R$200,00 por canal de voz.</p>
+            </div>
+  
+    <!-- Botão para enviar formulário, tipo submit-->
+     <div class = "card-group1">
+        <button type="button" class="botao" onclick="validar_form3()"> ENVIAR </button>
+     </div>
+     <!-- Botão para limpar formulário, tipo reset -->
+     <div class = "card-group2">
+        <button type="reset">LIMPAR</button>
+        </div>
+        
+        <script src="js/afi_form.js"></script>
+
+            </form>
+       </article>
+</section>
+<!--Footer da página -->
+<footer>
+    <p>MusikCity® 1997 - 2021</p>
+    <p>Atualizado em 14 de agosto de 2021</p>
+    <a class ="tc" href ="">Termos e condições</a>
+    <a class = "priv" href ="privacidade.html">Privacidade</a>
+</footer>
+
+<!--Finalização do documento com footer e fechando as tags de body e html -->
+
+</body>
+</body>
+
+</html>
