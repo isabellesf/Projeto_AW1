@@ -1,4 +1,5 @@
 function validar(){
+  //verifica se os campos estão vazios e retorna um alerta ao usuário
 
     var nomecc = document.getElementById("nomecc");
     if (nomecc.value == ""){
@@ -21,11 +22,5 @@ function validar(){
       cvv.focus();
     }
 
-    dataAtual = new Date();
-
-    data = new Date(data);
-
-    if (data < dataAtual) {
-      alert("Seu cartão está fora da validade, não será possível finalizar a compra");o
-         } 
-        }
+  
+}

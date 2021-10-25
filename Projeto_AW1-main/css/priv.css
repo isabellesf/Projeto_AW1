@@ -131,7 +131,7 @@ a.activate, a:hover{ /* Botão responsivo a click*/
 }
 
 .card-top {
-    text-align: center;
+    text-align: justify;
 }
 a.tc{
     display: flex;

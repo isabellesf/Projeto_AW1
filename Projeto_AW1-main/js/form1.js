@@ -1,5 +1,7 @@
-
-    function validar_form1(){
+//função ativada ao apertar o botão "enviar"
+    function validar_form1(){ 
+    
+   //variáveis sendo associadas aos inputs da página   
     var nome = document.getElementById("nome");
     var email = document.getElementById("email");
     var nome_usuario = document.getElementById("nome_usuario");
@@ -8,72 +10,71 @@
     var tipo = document.getElementById("tipo");
 
 
-         // verificar se o nome está vazio
+         // verifica se o nome está vazio
          if (nome.value == "") {
             alert("Nome não informado");
 
-            // Deixa o input com o focus
+            
             nome.focus();
-            // retorna a função e não olha as outras linhas
+            // retorna a função 
             return;
           } 
-                 // verificar se o nome está vazio
+                 // verifica se o email está vazio
                  if (email.value == "") {
             alert("Email não informado");
 
-            // Deixa o input com o focus
+            
             email.focus();
-            // retorna a função e não olha as outras linhas
+            
             return;
           } 
-        
+        //verifica se o email tem um formato válido (com @ e .)
           {
             if( document.forms[0].email.value=="" 
                || document.forms[0].email.value.indexOf('@')==-1 
                  || document.forms[0].email.value.indexOf('.')==-1 )
               {
+                //alerta o usuário que o email é inválido
                 alert( "Por favor, informe um E-MAIL válido!" );
                 return false;
               }
             }
         
-                 // verificar se o nome está vazio
+                 // verifica se o nome artístico está vazio
                  if (nome_usuario.value == "") {
             alert("Nome Artisitcos não informado");
 
-            // Deixa o input com o focus
             nome_usuario.focus();
-            // retorna a função e não olha as outras linhas
+           
             return;
           } 
 
-                   // verificar se o nome está vazio
+                   // verifica se o telefone está vazio
          if (telefone.value == "") {
             alert("telefone não informado");
 
-            // Deixa o input com o focus
             telefone.focus();
-            // retorna a função e não olha as outras linhas
+
             return;
           } 
 
           
-                       // verificar se o nome está vazio
+// verifica se o usuário é maior de 18 anos, condição para se inscrever
                        if (idade.value < 18) {
                         alert("a idade mínima para o envio do formulário é 18 anos");
             
-                        // Deixa o input com o focus
+                      
                         idade.focus();
-                        // retorna a função e não olha as outras linhas
+                        
                         return;
                       } 
-        
+         //verifica se a idade está vazia
                       if (idade.value == "") {
                         alert("idade não informada");
             
-                        // Deixa o input com o focus
+                      
                         idade.focus();
-                        // retorna a função e não olha as outras linhas
+                       
                         return;
                       } 
 
